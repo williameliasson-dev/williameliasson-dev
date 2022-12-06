@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: rgb(70, 70, 70);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -15,4 +16,12 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: var(--fontcolor);
+}
+
+:root {
+  --background: rgb(173, 173, 173);
+  --fontcolor: white;
+  --gray400: rgb(180, 180, 180);
+  --secondary: black;
 }
