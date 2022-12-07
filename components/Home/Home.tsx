@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import ArrowDownIcon from "../../icons/ArrowDownIcon";
 import NextIcon from "../../icons/NextIcon";
 import ReactIcon from "../../icons/ReactIcon";
 import SassIcon from "../../icons/SassIcon";
@@ -63,6 +64,9 @@ const Home: React.FC<HomeProps> = ({}) => {
                 </Card>
               </div>
             </div>
+          </div>
+          <div className={styles.scrolldown}>
+            <ArrowDownIcon />
           </div>
         </div>
       </div>
