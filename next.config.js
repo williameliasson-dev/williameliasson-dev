@@ -5,6 +5,17 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ghchart.rshah.org",
+        port: "",
+        pathname: "/williameliasson-dev",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

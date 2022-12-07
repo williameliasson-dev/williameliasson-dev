@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+
     .cards {
       display: flex;
       gap: 30px;
@@ -55,8 +55,14 @@
     .card-side {
       display: flex;
       flex-direction: column;
+      max-width: 400px;
       gap: 10px;
-
+      .review {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+      }
       .stack {
         display: flex;
         flex-direction: column;

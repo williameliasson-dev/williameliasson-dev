@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { homedir } from "os";
 import React from "react";
 import NextIcon from "../../icons/NextIcon";
 import ReactIcon from "../../icons/ReactIcon";
@@ -44,10 +43,22 @@ const Home: React.FC<HomeProps> = ({}) => {
                     </div>
                   </div>
                 </Card>
+
                 <Card>
-                  <div className={styles.card}>
-                    <h2>Mina favoriter</h2>
-                    <div></div>
+                  <div className={styles.review}>
+                    <p>
+                      10/10 rekommenderar. Väldigt snabb, kunnig och proffsig!
+                    </p>
+                    <p>- Kulan(William Forslund), kund</p>
+                  </div>
+                </Card>
+                <Card>
+                  <div className={styles.review}>
+                    <p>
+                      När var senaste gången du hörde om en tonåring som byggde
+                      en Stackoverflow klon? William vill ni inte missa.
+                    </p>
+                    <p>- Marcus Pousette, Senior IT-konsult</p>
                   </div>
                 </Card>
               </div>
