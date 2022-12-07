@@ -1,0 +1,16 @@
+.projects-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #010029;
+}
+
+.projects {
+  width: 100vw;
+  padding-top: 120px;
+  background-color: #010029;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

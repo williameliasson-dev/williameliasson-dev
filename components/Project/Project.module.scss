@@ -1,0 +1,16 @@
+.project {
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .project-image {
+    text-align: center;
+    padding: 20px;
+  }
+  .project-text {
+    text-align: left;
+    max-width: 400px;
+  }
+}
