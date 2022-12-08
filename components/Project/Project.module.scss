@@ -1,5 +1,5 @@
 .project {
-  padding: 20px;
+  padding: 15px;
   width: 600px;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,10 @@
   align-items: center;
   .project-image {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    img {
+      border-radius: 10px;
+    }
   }
   .project-text {
     text-align: left;

@@ -24,7 +24,7 @@ const Project: React.FC<ProjectProps> = ({
       <div className={styles.project}>
         <Link href={`${liveLink}`}>
           <div className={styles["project-image"]}>
-            <Image width={290} height={240} src={imgLink} alt={name} />
+            <Image width={435} height={271.88} src={imgLink} alt={name} />
           </div>
           <div className={styles["project-text"]}>
             <h2>{name}</h2>

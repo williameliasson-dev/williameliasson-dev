@@ -10,14 +10,14 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
       <div className={styles.projects} id="projekt">
         <Project
           name="qanda-forum"
-          description="A forum where you can ask questions and get answers by other users"
+          description="A forum where you can ask questions and get answers by other users."
           imgLink="/qanda-forum.png"
           githubLink="https://github.com/williameliasson-dev/q-and-a-forum"
           liveLink="https://q-and-a-forum.vercel.app/"
         />
         <Project
-          name="qanda-forum"
-          description="A forum where you can ask questions and get answers by other users"
+          name="webshop"
+          description="A webshop built with Next.js, Redux, Scss and klarna as checkout."
           imgLink="/qanda-forum.png"
           githubLink="https://github.com/williameliasson-dev/q-and-a-forum"
           liveLink="https://q-and-a-forum.vercel.app/"
