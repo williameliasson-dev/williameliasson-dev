@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client";
 import React from "react";
 import ArrowDownIcon from "../../icons/ArrowDownIcon";
 import NextIcon from "../../icons/NextIcon";
@@ -6,10 +6,17 @@ import ReactIcon from "../../icons/ReactIcon";
 import SassIcon from "../../icons/SassIcon";
 import Card from "../Card/Card";
 import styles from "./Home.module.scss";
+import { useWindowScrollPositions } from "../../utils/useWindowScrollPosition";
 
 interface HomeProps {}
 
 const Home: React.FC<HomeProps> = ({}) => {
+  const { scrollY } = useWindowScrollPositions();
+  const [showArrow, setShowArrow] = React.useState(true);
+  if (scrollY >= 200 && showArrow === true) {
+    setShowArrow(false);
+  }
+
   return (
     <>
       <div id="hem" className={styles["home"]}>
@@ -65,9 +72,15 @@ const Home: React.FC<HomeProps> = ({}) => {
               </div>
             </div>
           </div>
-          <div className={styles.scrolldown}>
-            <ArrowDownIcon />
-          </div>
+          {showArrow && (
+            <div
+              className={
+                scrollY < 100 ? styles.scrolldown : styles.scrolldisapear
+              }
+            >
+              <ArrowDownIcon />
+            </div>
+          )}
         </div>
       </div>
     </>

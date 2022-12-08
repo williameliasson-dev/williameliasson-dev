@@ -1,13 +1,17 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
+"use client";
 import Link from "next/link";
 import React from "react";
 import GitHub from "../../icons/GitHub";
 import LinkedIn from "../../icons/LinkedIn";
 import styles from "./Navbar.module.scss";
+import { useWindowScrollPositions } from "../../utils/useWindowScrollPosition";
 
 interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = ({}) => {
+  const { scrollY } = useWindowScrollPositions();
+
   return (
     <div className={styles["navbar-container"]}>
       <div className={styles.navbar}>
@@ -17,8 +21,15 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
           </Link>
         </div>
         <nav>
-          <Link href={"#hem"}>// hem</Link>
-          <Link href={"#projekt"}>// projekt</Link>
+          <Link href={"#hem"} className={scrollY < 600 ? styles.active : ""}>
+            // hem
+          </Link>
+          <Link
+            href={"#projekt"}
+            className={scrollY > 600 && scrollY < 1000 ? styles.active : ""}
+          >
+            // projekt
+          </Link>
           <Link href={"#om-mig"}>// om mig</Link>
         </nav>
         <div className={styles.socials}>
