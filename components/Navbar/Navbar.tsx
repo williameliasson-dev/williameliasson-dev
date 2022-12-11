@@ -26,11 +26,16 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
           </Link>
           <Link
             href={"#projekt"}
-            className={scrollY > 600 && scrollY < 1000 ? styles.active : ""}
+            className={scrollY > 600 && scrollY < 1500 ? styles.active : ""}
           >
             // projekt
           </Link>
-          <Link href={"#om-mig"}>// om mig</Link>
+          <Link
+            href={"#om-mig"}
+            className={scrollY > 1500 && scrollY < 9999 ? styles.active : ""}
+          >
+            // om mig
+          </Link>
         </nav>
         <div className={styles.socials}>
           <Link href={"https://github.com/williameliasson-dev"}>

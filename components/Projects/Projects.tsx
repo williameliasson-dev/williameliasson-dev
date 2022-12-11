@@ -17,10 +17,7 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
 
   return (
     <div className={styles["projects-container"]}>
-      <div
-        className={scrollY > 600 || show ? styles.projects : styles.hidden}
-        id="projekt"
-      >
+      <div className={scrollY > 600 || show ? styles.projects : styles.hidden}>
         <Project
           name="qanda-forum"
           description="A forum where you can ask questions and get answers by other users."

@@ -19,7 +19,7 @@ const Home: React.FC<HomeProps> = ({}) => {
 
   return (
     <>
-      <div id="hem" className={styles["home"]}>
+      <div className={styles["home"]}>
         <div className={styles["home-background"]}>
           <div className={styles["cards-container"]}>
             <div className={styles.cards}>
