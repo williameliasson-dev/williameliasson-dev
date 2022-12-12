@@ -10,9 +10,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ghchart.rshah.org",
+        hostname: "avatars.githubusercontent.com",
         port: "",
-        pathname: "/williameliasson-dev",
+        pathname:
+          "/u/39637161?s=400&u=a286db5626cc5aac22af03849c22477e71a43b94&v=4",
       },
     ],
   },

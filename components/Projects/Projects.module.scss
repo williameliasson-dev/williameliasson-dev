@@ -3,28 +3,3 @@
   height: 100vh;
   background-color: var(--primary);
 }
-
-.projects {
-  width: 100vw;
-  padding-top: 120px;
-  background-color: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  animation: slideIn 0.5s ease-in-out;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.hidden {
-  visibility: hidden;
-}

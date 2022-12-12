@@ -36,7 +36,6 @@ a {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: var(--fontcolor);
 }
 
 :root {
@@ -45,4 +44,5 @@ a {
   --gray400: rgb(180, 180, 180);
   --primary: #010029;
   --secondary: rgb(11, 176, 242);
+  --sogray: rgb(207, 207, 207);
 }
