@@ -55,7 +55,17 @@ const QandaForum: React.FC<QandaForumProps> = ({}) => {
                 </Link>
               </span>
             </div>
-            <p className={styles["question-asked"]}>Asked 3 weeks ago</p>
+            <div className={styles["question-asked"]}>
+              <p>
+                <span>Asked</span> 3 weeks ago
+              </p>
+              <p>
+                <span>Modified</span> 3 weeks ago
+              </p>
+              <p>
+                <span>Viewed</span> 76 times
+              </p>
+            </div>
           </div>
           <div className={styles["question-info"]}>
             <div className={styles["question-content"]}>
@@ -99,7 +109,7 @@ const QandaForum: React.FC<QandaForumProps> = ({}) => {
                           cy="5"
                           r="4"
                           strokeWidth="23"
-                          fill="hsl(67, 95%, 63%)"
+                          fill="hsl(50, 63%, 57%)"
                         />
                       </svg>
                       85

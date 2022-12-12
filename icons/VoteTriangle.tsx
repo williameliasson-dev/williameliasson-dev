@@ -16,11 +16,8 @@ const VoteTriangle: React.FC<VoteTriangleProps> = ({ active }) => {
           viewBox="0 0 1280.000000 1130.000000"
           preserveAspectRatio="xMidYMid meet"
         >
-          <metadata>
-            Created by potrace 1.15, written by Peter Selinger 2001-2017
-          </metadata>
           <g
-            transform="translate(0.000000,1130.000000) scale(0.100000,-0.100000)"
+            transform="translate(0.000000,1130.000000) scale(0.100000,-0.070000)"
             fill="lightgray"
             stroke="none"
           >
@@ -46,7 +43,7 @@ const VoteTriangle: React.FC<VoteTriangleProps> = ({ active }) => {
             Created by potrace 1.15, written by Peter Selinger 2001-2017
           </metadata>
           <g
-            transform="translate(0.000000,1130.000000) scale(0.100000,-0.100000)"
+            transform="translate(0.000000,1130.000000) scale(0.100000,-0.070000)"
             fill="orange"
             stroke="none"
           >
