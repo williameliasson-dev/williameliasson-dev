@@ -1,12 +1,25 @@
-import React from "react";
-import Card from "../Card/Card";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import VoteTriangle from "../../icons/VoteTriangle";
 import styles from "./QandaForum.module.scss";
 
 interface QandaForumProps {}
 
 const QandaForum: React.FC<QandaForumProps> = ({}) => {
+  const [vote, setVote] = useState(0);
+
+  const upvote = () => {
+    if (vote !== 1) {
+      setVote(1);
+    }
+  };
+  const downvote = () => {
+    if (vote !== -1) {
+      setVote(-1);
+    }
+  };
+
   return (
     <div className={styles["qanda"]}>
       <h1>q-and-a-forum</h1>
@@ -47,22 +60,20 @@ const QandaForum: React.FC<QandaForumProps> = ({}) => {
           <div className={styles["question-info"]}>
             <div className={styles["question-content"]}>
               <div className={styles.voting}>
-                <button>
-                  <Image
-                    width={70}
-                    height={70}
-                    alt="upvote"
-                    src="/triangle.svg"
-                  />
+                <button
+                  onClick={() => {
+                    upvote();
+                  }}
+                >
+                  <VoteTriangle active={vote === 1 || false} />
                 </button>
-                <p>2</p>
-                <button>
-                  <Image
-                    width={70}
-                    height={70}
-                    alt="upvote"
-                    src="/triangle.svg"
-                  />
+                <p>{2 + vote}</p>
+                <button
+                  onClick={() => {
+                    downvote();
+                  }}
+                >
+                  <VoteTriangle active={vote === -1 || false} />
                 </button>
               </div>
               <p>Hej</p>
@@ -87,7 +98,7 @@ const QandaForum: React.FC<QandaForumProps> = ({}) => {
                           cx="5"
                           cy="5"
                           r="4"
-                          stroke-width="23"
+                          strokeWidth="23"
                           fill="hsl(67, 95%, 63%)"
                         />
                       </svg>
