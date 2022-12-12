@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 "use client";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import React from "react";
 import GitHub from "../../icons/GitHub";
 import LinkedIn from "../../icons/LinkedIn";
 import styles from "./Navbar.module.scss";
 import { useWindowScrollPositions } from "../../utils/useWindowScrollPosition";
+import { useRouter } from "next/router";
 
 interface NavbarProps {}
 
@@ -16,22 +17,22 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
     <div className={styles["navbar-container"]}>
       <div className={styles.navbar}>
         <div className={styles.brand}>
-          <Link href={"/"}>
+          <Link activeClass="active" to="hem">
             <h3>williameliasson.dev</h3>
           </Link>
         </div>
         <nav>
-          <Link href={"#hem"} className={scrollY < 600 ? styles.active : ""}>
+          <Link to={"hem"} className={scrollY < 600 ? styles.active : ""}>
             // hem
           </Link>
           <Link
-            href={"#projekt"}
+            to={"projekt"}
             className={scrollY > 600 && scrollY < 1500 ? styles.active : ""}
           >
             // projekt
           </Link>
           <Link
-            href={"#om-mig"}
+            to={"om-mig"}
             className={scrollY > 1500 && scrollY < 9999 ? styles.active : ""}
           >
             // om mig

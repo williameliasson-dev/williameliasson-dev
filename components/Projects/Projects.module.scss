@@ -1,5 +1,10 @@
 .projects-container {
   width: 100vw;
   height: 100vh;
-  background-color: var(--primary);
+  background: url("/steps-project.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

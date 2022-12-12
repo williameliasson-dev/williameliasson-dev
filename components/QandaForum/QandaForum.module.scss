@@ -4,12 +4,24 @@
   width: min(1265px, 100%);
   margin: auto;
   justify-content: center;
-  color: white;
+}
+
+.qanda-content {
   h1 {
     padding-bottom: 20px;
+    padding-top: 20px;
   }
   > p {
     padding-bottom: 20px;
+  }
+  .qanda-links {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+    a {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -18,6 +30,7 @@
   color: black !important;
   background-color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-shadow: 5px 5px 45px 2px #a8a8a8;
   .question {
     color: inherit;
     padding: 20px;
@@ -62,6 +75,11 @@
     .question-content {
       display: flex;
       justify-content: flex-start;
+      p {
+        padding: 20px 5px;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
     }
     .question-meta {
       display: flex;

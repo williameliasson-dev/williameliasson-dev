@@ -5,12 +5,12 @@ import AboutMe from "../components/AboutMe/AboutMe";
 export default function Page() {
   return (
     <div>
-      <div id="hem">
+      <section id="hem">
         <Home />
-      </div>
-      <div id="projekt">
+      </section>
+      <section id="projekt">
         <Projects />
-      </div>
+      </section>
       <AboutMe />
     </div>
   );
