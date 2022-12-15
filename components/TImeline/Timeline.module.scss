@@ -1,5 +1,5 @@
 .timeline {
-  max-width: 1200px;
+  width: min(1265px, 100%);
   margin: 100px auto;
   h1 {
     text-align: center;
@@ -64,7 +64,7 @@
 @keyframes slideinfromtop {
   0% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-300px);
   }
   100% {
     opacity: 100;

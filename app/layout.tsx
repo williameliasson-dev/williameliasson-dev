@@ -10,10 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sv" className={sourceCodePro.className}>
-      <body>
-        <Navbar />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

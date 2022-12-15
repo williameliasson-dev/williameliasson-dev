@@ -124,7 +124,7 @@ const Timeline: React.FC<TimelineProps> = ({}) => {
       >
         <div className={styles["timeline-slide-text"]}>
           <h1>Dags för finslipning.</h1>
-          <p>Sen början av min resa hade jag lärt mig mycket.</p>
+          <p>Sedan början av min resa hade jag lärt mig mycket.</p>
           <p>
             Jag hade börjat och pilla med teknologier så som TypeScript och
             Next.js. Jag hade även börjat lära mig mer om React och dess eko
@@ -184,18 +184,15 @@ const Timeline: React.FC<TimelineProps> = ({}) => {
         <div className={styles["timeline-slide-text"]}>
           <h1>Framtiden..</h1>
           <p>
-            Just nu så söker jag heltids jobb som webb utvecklare. Jag har en
+            Just nu så söker jag heltids jobb som webbutvecklare. Jag har en
             stor vilja att lära mig mer och vill bli bättre. Men vem vet kanske
             är det just ditt företag som jag skriver om härnäst...
           </p>
         </div>
-        <div
-          className={styles["timeline-slide-img"]}
-          alt="Vem vet vad framtiden håller?"
-        >
+        <div className={styles["timeline-slide-img"]}>
           <Image
             src={"/undraw_hologram_re_7ppw.svg"}
-            alt="Party!"
+            alt="Vem vet vad framtiden håller?"
             width={500}
             height={300}
           ></Image>
