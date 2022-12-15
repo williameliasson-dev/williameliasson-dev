@@ -39,14 +39,12 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
           </Link>
         </nav>
         <div className={styles.socials}>
-          <Link href={"https://github.com/williameliasson-dev"}>
+          <a href={"https://github.com/williameliasson-dev"}>
             <GitHub />
-          </Link>
-          <Link
-            href={"https://www.linkedin.com/in/william-eliasson-235927228/"}
-          >
+          </a>
+          <a href={"https://www.linkedin.com/in/william-eliasson-235927228/"}>
             <LinkedIn />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

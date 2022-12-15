@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import VoteTriangle from "../../icons/VoteTriangle";
 import styles from "./QandaForum.module.scss";
-import Card from "../Card/Card";
 import GitHub from "../../icons/GitHub";
 import ExternalIcon from "../../icons/ExternalIcon";
 
@@ -108,9 +107,9 @@ const QandaForum: React.FC<QandaForumProps> = ({}) => {
                   Planen var att bygga nåt variant av stackoverflow inte direkt
                   en klon. Taggarna som används i toppen av frågan är länkar
                   till respektive hemsida. Detta projekt är byggt med Next.js,
-                  TypeScript, MongoDB, Mongoose, NextAuth.js och SCSS för
-                  styling. Detta projekt är inte helt färdigt och kommer att
-                  uppdateras med nya funktioner och förbättringar.
+                  MongoDB, Mongoose, NextAuth.js och SCSS för styling. Detta
+                  projekt är inte helt färdigt och kommer att uppdateras med nya
+                  funktioner och förbättringar.
                 </p>
               </div>
               <div className={styles["question-meta"]}>

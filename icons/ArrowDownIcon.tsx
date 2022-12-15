@@ -10,7 +10,7 @@ const ArrowDownIcon: React.FC<ArrowDownIconProps> = ({}) => {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="white"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"

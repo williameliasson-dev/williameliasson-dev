@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   .home-background {
-    background: url("/layered-steps-haikei.svg");
+    background: url("/steps-project.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -15,65 +15,60 @@
     justify-content: center;
     align-items: center;
   }
-  .cards-container {
-    width: min(1265px, 100%);
-    .cards {
+}
+
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: min(1265px, 100%);
+  .greeting-text {
+    max-width: 880px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    .greeting-text-name {
       display: flex;
-      gap: 30px;
-      justify-content: center;
-      align-items: flex-start;
-    }
-    .card {
-      display: flex;
-      padding: 20px;
-    }
-    .card-greeting {
-      h2 {
-        font-weight: 900;
-        padding-bottom: 20px;
-      }
-      padding: 20px;
-      z-index: 100;
-      font-size: 20px;
-      font-weight: 300;
-      flex: 1;
-    }
-    .card-greeting-image {
-      border-radius: 50%;
-      min-width: 300px;
-      min-height: 300px;
-      margin: auto;
-      margin-right: 20px;
-      background: url("/williame.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-    .card-side {
-      display: flex;
-      flex-direction: column;
+      align-items: center;
       gap: 10px;
-      .review {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        padding: 20px;
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
       }
-      .stack {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        div {
-          display: flex;
-        }
-        h2 {
-          margin-top: 30px;
-        }
-        svg {
-          width: 70px;
-          margin: 20px;
-        }
+      p {
+        color: var(--secondary);
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.skills {
+  h1 {
+    font-size: 2rem;
+  }
+  .skills-section {
+    h1 {
+      padding-top: 20px;
+    }
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 450px;
+    }
+    span {
+      background-color: black;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      &:hover {
+        transform: rotate(5deg);
       }
     }
   }
