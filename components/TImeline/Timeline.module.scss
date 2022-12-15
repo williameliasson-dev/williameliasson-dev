@@ -6,11 +6,37 @@
     font-size: 3rem;
     padding-bottom: 20px;
   }
+  .timeline-slide {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    animation: slideinfromtop 0.5s ease-in-out;
+    .timeline-slide-text {
+      h1 {
+        text-align: left;
+      }
+    }
+    .timeline-slide-img {
+      img {
+        padding: 20px;
+      }
+      p {
+        text-align: center;
+        padding-top: 10px;
+      }
+    }
+  }
+  .timeline-slide-hidden {
+    display: none;
+  }
+
   .timeline-buttons {
     position: relative;
     display: flex;
     justify-content: space-between;
     .timeline-button {
+      width: 170px;
       font-family: inherit;
       font-size: 1.2rem;
       background-color: black;
@@ -21,7 +47,7 @@
       cursor: pointer;
       transition: all 0.2s ease-in-out;
       &:hover {
-        background-color: rgb(103, 103, 103);
+        background-color: rgb(82, 82, 82);
       }
       z-index: 10;
     }
@@ -32,5 +58,16 @@
       top: 50%;
       z-index: 0;
     }
+  }
+}
+
+@keyframes slideinfromtop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0);
   }
 }
