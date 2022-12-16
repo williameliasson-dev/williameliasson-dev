@@ -3,6 +3,7 @@ import Home from "../components/Home/Home";
 import Projects from "../components/Projects/Projects";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Info from "../components/Info/Info";
+import Timeline from "../components/TImeline/Timeline";
 export default function Page() {
   return (
     <div>
@@ -10,7 +11,7 @@ export default function Page() {
         <Home />
       </section>
       <section id="info">
-        <Info />
+        <Timeline />
       </section>
       <section id="projekt">
         <Projects />
