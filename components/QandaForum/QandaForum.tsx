@@ -61,7 +61,7 @@ const QandaForum: React.FC<QandaForumProps> = ({}) => {
                   </Link>
                 </span>
                 <span>
-                  <Link href={"https://www.mongodb.com/"}>
+                  <Link href={"https://www.mongodb.com/home"}>
                     <p>mongodb</p>
                   </Link>
                 </span>
