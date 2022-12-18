@@ -1,8 +1,10 @@
+"use client";
 import "../styles/globals.scss";
 import Home from "../components/Home/Home";
 import Projects from "../components/Projects/Projects";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Timeline from "../components/TImeline/Timeline";
+import QandaForum from "../components/QandaForum/QandaForum";
 export default function Page() {
   return (
     <div>
@@ -14,6 +16,9 @@ export default function Page() {
       </section>
       <section id="projekt">
         <Projects />
+      </section>
+      <section id="qanda">
+        <QandaForum />
       </section>
     </div>
   );

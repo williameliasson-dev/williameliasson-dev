@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styles from "./Projects.module.scss";
 import { useWindowScrollPositions } from "../../utils/useWindowScrollPosition";
 import CircleIcon from "../../icons/CircleIcon";
+import { Link } from "react-scroll";
 
 interface ProjectsProps {}
 
@@ -35,7 +36,7 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
         <div className={styles["projects-intro-cards"]}>
           <div className={styles["projects-intro-card"]}>
             <div className={styles["projects-intro-card-top"]}>
-              <h2>webshop</h2>
+              <h2>/webshop</h2>
             </div>
             <div className={styles["projects-intro-card-content"]}>
               <p>
@@ -48,24 +49,27 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
               <p>TypeScript</p>
             </div>
           </div>
+          <Link to="qanda">
+            <div className={styles["projects-intro-card"]}>
+              <div className={styles["projects-intro-card-top"]}>
+                <h2>/qanda-forum</h2>
+              </div>
+              <div className={styles["projects-intro-card-content"]}>
+                <p>
+                  En klon av stackoverflow med fokus på frågesektionen. Gjord i
+                  Next.js med SCSS. Som databas har jag använt MongoDB med
+                  Mongoose.
+                </p>
+              </div>
+              <div className={styles["projects-intro-card-bottom"]}>
+                <div className={styles["js-icon"]}></div>
+                <p>JavaScript</p>
+              </div>
+            </div>
+          </Link>
           <div className={styles["projects-intro-card"]}>
             <div className={styles["projects-intro-card-top"]}>
-              <h2>qanda-forum</h2>
-            </div>
-            <div className={styles["projects-intro-card-content"]}>
-              <p>
-                En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
-                har jag valt att integrera Klarnas checkout system.
-              </p>
-            </div>
-            <div className={styles["projects-intro-card-bottom"]}>
-              <div className={styles["js-icon"]}></div>
-              <p>JavaScript</p>
-            </div>
-          </div>
-          <div className={styles["projects-intro-card"]}>
-            <div className={styles["projects-intro-card-top"]}>
-              <h2>webshop</h2>
+              <h2>/sorting-algo</h2>
             </div>
             <div className={styles["projects-intro-card-content"]}>
               <p>
