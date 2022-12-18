@@ -34,7 +34,9 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
         </div>
         <div className={styles["projects-intro-cards"]}>
           <div className={styles["projects-intro-card"]}>
-            <div className={styles["projects-intro-card-top"]}>webshop</div>
+            <div className={styles["projects-intro-card-top"]}>
+              <h2>webshop</h2>
+            </div>
             <div className={styles["projects-intro-card-content"]}>
               <p>
                 En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
@@ -47,7 +49,9 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
             </div>
           </div>
           <div className={styles["projects-intro-card"]}>
-            <div className={styles["projects-intro-card-top"]}>qanda-forum</div>
+            <div className={styles["projects-intro-card-top"]}>
+              <h2>qanda-forum</h2>
+            </div>
             <div className={styles["projects-intro-card-content"]}>
               <p>
                 En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
@@ -60,7 +64,9 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
             </div>
           </div>
           <div className={styles["projects-intro-card"]}>
-            <div className={styles["projects-intro-card-top"]}>webshop</div>
+            <div className={styles["projects-intro-card-top"]}>
+              <h2>webshop</h2>
+            </div>
             <div className={styles["projects-intro-card-content"]}>
               <p>
                 En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
