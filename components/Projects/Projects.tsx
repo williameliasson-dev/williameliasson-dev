@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./Projects.module.scss";
 import { useWindowScrollPositions } from "../../utils/useWindowScrollPosition";
-import QandaForum from "../QandaForum/QandaForum";
+import CircleIcon from "../../icons/CircleIcon";
 
 interface ProjectsProps {}
 
@@ -17,8 +17,62 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
 
   return (
     <div className={styles["projects-container"]}>
-      <div className={scrollY > 0 || show ? styles.projects : styles.hidden}>
-        <QandaForum />
+      <div className={styles["projects-intro"]}>
+        <div className={styles["projects-intro-text"]}>
+          <h1>
+            <span>Projekt</span>
+          </h1>
+
+          <p>Här är några av mina projekt som jag har gjort.</p>
+          <p>
+            Jag har gjort dessa projekt för att lära mig mer om olika tekniker
+            och för att ha något att visa upp.
+          </p>
+          <p>
+            För att navigera till nåt av dem, klicka på ett av korten nedanför.
+          </p>
+        </div>
+        <div className={styles["projects-intro-cards"]}>
+          <div className={styles["projects-intro-card"]}>
+            <div className={styles["projects-intro-card-top"]}>webshop</div>
+            <div className={styles["projects-intro-card-content"]}>
+              <p>
+                En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
+                har jag valt att integrera Klarnas checkout system.
+              </p>
+            </div>
+            <div className={styles["projects-intro-card-bottom"]}>
+              <div className={styles["ts-icon"]}></div>
+              <p>TypeScript</p>
+            </div>
+          </div>
+          <div className={styles["projects-intro-card"]}>
+            <div className={styles["projects-intro-card-top"]}>qanda-forum</div>
+            <div className={styles["projects-intro-card-content"]}>
+              <p>
+                En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
+                har jag valt att integrera Klarnas checkout system.
+              </p>
+            </div>
+            <div className={styles["projects-intro-card-bottom"]}>
+              <div className={styles["js-icon"]}></div>
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div className={styles["projects-intro-card"]}>
+            <div className={styles["projects-intro-card-top"]}>webshop</div>
+            <div className={styles["projects-intro-card-content"]}>
+              <p>
+                En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
+                har jag valt att integrera Klarnas checkout system.
+              </p>
+            </div>
+            <div className={styles["projects-intro-card-bottom"]}>
+              <div className={styles["js-icon"]}></div>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

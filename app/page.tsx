@@ -2,7 +2,6 @@ import "../styles/globals.scss";
 import Home from "../components/Home/Home";
 import Projects from "../components/Projects/Projects";
 import AboutMe from "../components/AboutMe/AboutMe";
-import Info from "../components/Info/Info";
 import Timeline from "../components/TImeline/Timeline";
 export default function Page() {
   return (
@@ -16,7 +15,6 @@ export default function Page() {
       <section id="projekt">
         <Projects />
       </section>
-      <AboutMe />
     </div>
   );
 }

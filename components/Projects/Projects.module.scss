@@ -1,10 +1,71 @@
 .projects-container {
   width: 100vw;
   height: 100vh;
-  background: url("/layered-steps-haikei.svg");
+  background: url("/steps-project.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+
   justify-content: center;
-  align-items: center;
+}
+
+.projects-intro {
+  width: min(1265px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .projects-intro-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    text-align: right;
+    max-width: 800px;
+  }
+}
+
+.projects-intro-cards {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  padding: 20px 0px;
+  .projects-intro-card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    border-radius: 5px;
+    height: 200px;
+    .projects-intro-card-top {
+      border-bottom: 1px solid black;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .projects-intro-card-content {
+    }
+    .projects-intro-card-bottom {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      .ts-icon {
+        background-color: rgb(0, 122, 204);
+        width: 10px;
+        height: 10px;
+        margin: 3px;
+        border-radius: 50%;
+      }
+      .js-icon {
+        background-color: #f7df1e;
+        width: 10px;
+        height: 10px;
+        margin: 3px;
+        border-radius: 50%;
+      }
+    }
+  }
 }
