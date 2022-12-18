@@ -49,6 +49,10 @@
 }
 
 .skills {
+  display: flex;
+  .skills-img {
+    margin-top: auto;
+  }
   h1 {
     font-size: 2rem;
   }

@@ -36,49 +36,60 @@ const Home: React.FC<HomeProps> = ({}) => {
               </p>
             </div>
             <div className={styles.skills}>
-              <h1>Vad kan jag för nåt?</h1>
-              <div className={styles["skills-section"]}>
-                <h1>Språk</h1>
-                <div>
-                  <span>JavaScript</span>
-                  <span>TypeScript</span>
-                  <span>Python🐍</span>
-                  <span>Swedish🇸🇪</span>
-                  <span>English🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+              <div>
+                <h1>Vad kan jag för nåt?</h1>
+                <div className={styles["skills-section"]}>
+                  <h1>Språk</h1>
+                  <div>
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>Python🐍</span>
+                    <span>Swedish🇸🇪</span>
+                    <span>English🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                  </div>
+                </div>
+                <div className={styles["skills-section"]}>
+                  <h1>Frontend</h1>
+                  <div>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>Redux</span>
+                    <span>Material UI</span>
+                    <span>Chakra UI</span>
+                  </div>
+                </div>
+
+                <div className={styles["skills-section"]}>
+                  <h1>Backend</h1>
+                  <div>
+                    <span>Prisma</span>
+                    <span>Express</span>
+                    <span>PostgreSQL</span>
+                    <span>next-auth</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                    <span>Mongoose</span>
+                  </div>
+                </div>
+                <div className={styles["skills-section"]}>
+                  <h1>Devops & CI/CD</h1>
+                  <div>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>EsLint</span>
+                  </div>
                 </div>
               </div>
-              <div className={styles["skills-section"]}>
-                <h1>Frontend</h1>
-                <div>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>React</span>
-                  <span>Next.js</span>
-                  <span>Redux</span>
-                  <span>Material UI</span>
-                  <span>Chakra UI</span>
-                </div>
-              </div>
-              <div className={styles["skills-section"]}>
-                <h1>Backend</h1>
-                <div>
-                  <span>Prisma</span>
-                  <span>Express</span>
-                  <span>PostgreSQL</span>
-                  <span>next-auth</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
-                  <span>Mongoose</span>
-                </div>
-              </div>
-              <div className={styles["skills-section"]}>
-                <h1>Devops & CI/CD</h1>
-                <div>
-                  <span>Git</span>
-                  <span>GitHub</span>
-                  <span>EsLint</span>
-                </div>
+              <div className={styles["skills-img"]}>
+                <Image
+                  src={"/undraw_absorbed_in_re_ymd6.svg"}
+                  width={500}
+                  height={300}
+                  alt="Hejsan!"
+                ></Image>
               </div>
             </div>
           </div>
