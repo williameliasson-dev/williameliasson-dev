@@ -5,6 +5,7 @@ import Projects from "../components/Projects/Projects";
 import AboutMe from "../components/AboutMe/AboutMe";
 import Timeline from "../components/TImeline/Timeline";
 import QandaForum from "../components/QandaForum/QandaForum";
+import SortingAlgo from "../components/SortingAlgo/SortingAlgo";
 export default function Page() {
   return (
     <div>
@@ -19,6 +20,9 @@ export default function Page() {
       </section>
       <section id="qanda">
         <QandaForum />
+      </section>
+      <section id="sorting-algo">
+        <SortingAlgo />
       </section>
     </div>
   );

@@ -1,0 +1,16 @@
+.sorting-algo {
+  height: 60vh;
+  width: min(1265px, 100%);
+  margin: auto;
+  .sorting-algo-sticks {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .sorting-algo-stick {
+      background-color: red;
+      width: 20px;
+    }
+  }
+}
