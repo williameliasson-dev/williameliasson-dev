@@ -41,7 +41,8 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
             <div className={styles["projects-intro-card-content"]}>
               <p>
                 En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
-                har jag valt att integrera Klarnas checkout system.
+                har jag valt att integrera Klarnas checkout system. Backenden är
+                byggd i Next.js API som använder sig av Prisma och PostgreSQL.
               </p>
             </div>
             <div className={styles["projects-intro-card-bottom"]}>
@@ -74,9 +75,8 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
               </div>
               <div className={styles["projects-intro-card-content"]}>
                 <p>
-                  En simpel webbshop gjord i Next.js med SCSS, som
-                  betalningsmetod har jag valt att integrera Klarnas checkout
-                  system.
+                  En webbapplikation som visar hur olika sorteringsalgoritmer
+                  fungerar. Gjord i React med CSS.
                 </p>
               </div>
               <div className={styles["projects-intro-card-bottom"]}>

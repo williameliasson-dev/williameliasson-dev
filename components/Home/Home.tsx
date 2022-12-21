@@ -26,11 +26,11 @@ const Home: React.FC<HomeProps> = ({}) => {
                 <h1>William Eliasson</h1>
                 <p>(Fullstack Utvecklare)</p>
               </div>
-              <p>
-                Jag är en driven och ambitiös utvecklare som älskar att skapa
-                saker. Jag har en stor passion för att skapa saker som är
-                användbara och som kan hjälpa andra människor.
-              </p>
+              <p>Jag är en driven och ambitiös utvecklare</p>
+              <p>som älskar att skapa saker.</p>
+              Jag har en stor passion för
+              <p>att utveckla verktyg som är användbara och som kan hjälpa </p>
+              <p>andra människor.</p>
             </div>
             <div className={styles.skills}>
               <div>
@@ -80,14 +80,6 @@ const Home: React.FC<HomeProps> = ({}) => {
                     <span>EsLint</span>
                   </div>
                 </div>
-              </div>
-              <div className={styles["skills-img"]}>
-                <Image
-                  src={"/undraw_absorbed_in_re_ymd6.svg"}
-                  width={500}
-                  height={300}
-                  alt="Hejsan!"
-                ></Image>
               </div>
             </div>
           </div>

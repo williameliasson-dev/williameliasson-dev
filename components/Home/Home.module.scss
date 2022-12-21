@@ -16,8 +16,8 @@
 }
 
 .greeting {
-  padding-top: 20px;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -48,9 +48,6 @@
 
 .skills {
   display: flex;
-  .skills-img {
-    margin-top: auto;
-  }
   h1 {
     font-size: 2rem;
   }
