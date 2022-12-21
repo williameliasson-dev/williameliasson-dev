@@ -1,19 +1,15 @@
 .sorting-algo-container {
+  width: 100%;
   height: 100vh;
-  width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   font-size: 1.3rem;
   background: url("/steps-sorting.svg");
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .sorting-algo {
-  width: min(1265px, 100%);
-  margin: auto;
-  padding-top: 200px;
+  margin-bottom: 80px;
   .sorting-algo-info {
     display: flex;
     flex-direction: column;

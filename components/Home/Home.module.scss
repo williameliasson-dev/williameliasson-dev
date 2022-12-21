@@ -1,5 +1,5 @@
 .home {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   padding: 0;
@@ -8,21 +8,19 @@
     background: url("/steps-home.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
     inset: 0;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 }
 
 .greeting {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  width: min(1265px, 100%);
   .greeting-text {
     max-width: 880px;
     font-size: 1.3rem;
@@ -67,6 +65,8 @@
       max-width: 450px;
     }
     span {
+      display: flex;
+      align-items: center;
       background-color: black;
       color: white;
       padding: 5px;

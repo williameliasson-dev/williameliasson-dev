@@ -28,11 +28,8 @@ const Home: React.FC<HomeProps> = ({}) => {
               </div>
               <p>
                 Jag är en driven och ambitiös utvecklare som älskar att skapa
-                saker.
-              </p>
-              <p>
-                Jag har en stor passion för att skapa saker som är användbara
-                och som kan hjälpa andra människor.
+                saker. Jag har en stor passion för att skapa saker som är
+                användbara och som kan hjälpa andra människor.
               </p>
             </div>
             <div className={styles.skills}>
@@ -72,6 +69,7 @@ const Home: React.FC<HomeProps> = ({}) => {
                     <span>Node.js</span>
                     <span>MongoDB</span>
                     <span>Mongoose</span>
+                    <span>REST API</span>
                   </div>
                 </div>
                 <div className={styles["skills-section"]}>

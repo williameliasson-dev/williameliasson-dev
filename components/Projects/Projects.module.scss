@@ -1,6 +1,6 @@
 .projects-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: url("/steps-project.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +35,7 @@
   padding: 20px 0px;
   .projects-intro-card {
     &:hover {
-      transform: rotate(2deg);
+      transform: rotate(3deg);
     }
     border: 1px solid black;
     display: flex;

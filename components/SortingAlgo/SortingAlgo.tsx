@@ -71,7 +71,14 @@ const SortingAlgo: React.FC<SortingAlgoProps> = ({}) => {
       <div className={styles["sorting-algo"]}>
         <div className={styles["sorting-algo-info"]}>
           <h1>sorting-algo</h1>
-          <p>aa</p>
+          <p>
+            Detta projekt visualiserar olika sorteringsalgorithmer så dem blir
+            lättare att förstå för användaren.
+          </p>
+          <p>
+            Användaren kan även själv välja vilken algorithm, hur snabbt det ska
+            gå och hur många stapplar som sorteras
+          </p>
           <div className={styles["sorting-algo-links"]}>
             <Link href={"https://sorting-algo-six.vercel.app/"}>
               <ExternalIcon /> Demo

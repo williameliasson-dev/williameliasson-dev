@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  margin: 0 auto;
+  max-width: 1465px;
 }
 body {
   padding: 0;
@@ -43,6 +45,7 @@ a {
   --background: rgb(98, 98, 98);
   --fontcolor: white;
   --gray400: rgb(180, 180, 180);
+  --primary: #010029;
   --secondary: rgb(11, 176, 242);
   --sogray: rgb(207, 207, 207);
 }
