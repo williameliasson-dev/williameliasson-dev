@@ -34,22 +34,25 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
           </p>
         </div>
         <div className={styles["projects-intro-cards"]}>
-          <div className={styles["projects-intro-card"]}>
-            <div className={styles["projects-intro-card-top"]}>
-              <h2>/webshop</h2>
+          <a href={"https://github.com/williameliasson-dev/webshop"}>
+            <div className={styles["projects-intro-card"]}>
+              <div className={styles["projects-intro-card-top"]}>
+                <h2>/webshop</h2>
+              </div>
+              <div className={styles["projects-intro-card-content"]}>
+                <p>
+                  En simpel webbshop gjord i Next.js med SCSS, som
+                  betalningsmetod har jag valt att integrera Klarnas checkout
+                  system. Backenden är byggd i Next.js API som använder sig av
+                  Prisma och PostgreSQL.
+                </p>
+              </div>
+              <div className={styles["projects-intro-card-bottom"]}>
+                <div className={styles["ts-icon"]}></div>
+                <p>TypeScript</p>
+              </div>
             </div>
-            <div className={styles["projects-intro-card-content"]}>
-              <p>
-                En simpel webbshop gjord i Next.js med SCSS, som betalningsmetod
-                har jag valt att integrera Klarnas checkout system. Backenden är
-                byggd i Next.js API som använder sig av Prisma och PostgreSQL.
-              </p>
-            </div>
-            <div className={styles["projects-intro-card-bottom"]}>
-              <div className={styles["ts-icon"]}></div>
-              <p>TypeScript</p>
-            </div>
-          </div>
+          </a>
           <Link to="qanda">
             <div className={styles["projects-intro-card"]}>
               <div className={styles["projects-intro-card-top"]}>

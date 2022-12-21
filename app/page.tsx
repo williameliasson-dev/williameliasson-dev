@@ -6,6 +6,7 @@ import AboutMe from "../components/AboutMe/AboutMe";
 import Timeline from "../components/TImeline/Timeline";
 import QandaForum from "../components/QandaForum/QandaForum";
 import SortingAlgo from "../components/SortingAlgo/SortingAlgo";
+import Ending from "../components/Ending/Ending";
 export default function Page() {
   return (
     <div>
@@ -24,6 +25,7 @@ export default function Page() {
       <section id="sorting-algo">
         <SortingAlgo />
       </section>
+      <Ending />
     </div>
   );
 }
