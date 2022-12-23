@@ -76,8 +76,8 @@ const SortingAlgo: React.FC<SortingAlgoProps> = ({}) => {
             lättare att förstå för användaren.
           </p>
           <p>
-            Användaren kan även själv välja vilken algorithm, hur snabbt det ska
-            gå och hur många stapplar som sorteras
+            Användaren kan även själv välja algorithm, hur snabbt det ska gå och
+            hur många stapplar som sorteras
           </p>
           <div className={styles["sorting-algo-links"]}>
             <Link href={"https://sorting-algo-six.vercel.app/"}>
@@ -102,7 +102,7 @@ const SortingAlgo: React.FC<SortingAlgoProps> = ({}) => {
           <button onClick={() => setNewArray(!newArray)} disabled={sorting}>
             Generate new array
           </button>
-          <div>
+          <div className={styles["sorting-algo-range"]}>
             <label>Antal stavar</label>
             <input
               className={styles["sorting-algo-range"]}

@@ -20,6 +20,10 @@
       padding-bottom: 20px;
       padding-top: 20px;
     }
+    // bad pratice ik <3
+    p:nth-last-child(2) {
+      padding-bottom: 20px;
+    }
     .sorting-algo-links {
       display: flex;
       gap: 10px;
@@ -36,21 +40,21 @@
     gap: 10px;
     padding: 20px 0px;
     .sorting-algo-range {
+      appearance: none;
       overflow: hidden;
-      &::-webkit-slider-runnable-track {
+      input[type="range"]::-webkit-slider-runnable-track {
         -webkit-appearance: none;
-        background-color: white;
+        background-color: black;
         border: 1px solid black;
         border-radius: 5px;
       }
-      &::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background: #04aa6d;
+      input[type="range"]::-webkit-slider-thumb {
+        border-radius: 5px;
+        background: #ffffff;
         cursor: pointer;
+        width: 10px;
+        height: 15px;
+        -webkit-appearance: none;
       }
 
       &:disabled {
