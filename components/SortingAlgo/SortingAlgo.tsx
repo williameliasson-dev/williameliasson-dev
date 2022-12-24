@@ -33,7 +33,10 @@ const SortingAlgo: React.FC<SortingAlgoProps> = ({}) => {
 
   async function bubbleSort(
     arr: Array<stick>,
-    setArray: React.SetStateAction<Array<stick>>,
+    setArray: {
+      (value: React.SetStateAction<stick[]>): void;
+      (arg0: stick[]): void;
+    },
     speed: number
   ) {
     const timer = (ms: number) => new Promise((res) => setTimeout(res, ms));

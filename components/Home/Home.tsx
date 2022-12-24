@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import ArrowDownIcon from "../../icons/ArrowDownIcon";
 import styles from "./Home.module.scss";
 import { useWindowScrollPositions } from "../../utils/useWindowScrollPosition";
-import Card from "../Card/Card";
 
 interface HomeProps {}
 
