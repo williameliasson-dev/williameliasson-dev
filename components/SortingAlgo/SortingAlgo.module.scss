@@ -2,7 +2,6 @@
   width: 100%;
   height: 100vh;
   display: flex;
-
   align-items: flex-end;
   font-size: 1.3rem;
   background: url("/steps-sorting.svg");
@@ -10,7 +9,6 @@
 }
 
 .sorting-algo {
-  flex: 1;
   margin-bottom: 80px;
   .sorting-algo-info {
     display: flex;
@@ -36,6 +34,7 @@
   }
   .sorting-algo-buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     padding: 20px 0px;
@@ -105,6 +104,108 @@
     .sorting-algo-stick-done {
       @extend .sorting-algo-stick-none;
       background-color: rgb(87, 242, 135);
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sorting-algo {
+    margin-bottom: 80px;
+    .sorting-algo-info {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      // bad pratice ik <3
+      p:nth-last-child(2) {
+        padding-bottom: 20px;
+      }
+      .sorting-algo-links {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 20px;
+        a {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .sorting-algo-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 0px;
+      .sorting-algo-range {
+        appearance: none;
+        overflow: hidden;
+        input[type="range"]::-webkit-slider-runnable-track {
+          -webkit-appearance: none;
+          background-color: black;
+          border: 1px solid black;
+          border-radius: 5px;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+          border-radius: 5px;
+          background: #ffffff;
+          cursor: pointer;
+          width: 10px;
+          height: 15px;
+          -webkit-appearance: none;
+        }
+
+        &:disabled {
+          background-color: rgb(82, 82, 82);
+          cursor: not-allowed;
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        font-family: inherit;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: rgb(82, 82, 82);
+        }
+        &:disabled {
+          background-color: rgb(82, 82, 82);
+          cursor: not-allowed;
+        }
+        z-index: 10;
+      }
+    }
+    .sorting-algo-sticks {
+      border: 1px solid black;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      height: 300px;
+
+      .sorting-algo-stick-none {
+        background-color: var(--secondary);
+        width: 5%;
+      }
+      .sorting-algo-stick-active {
+        @extend .sorting-algo-stick-none;
+        background-color: rgb(253, 253, 122);
+      }
+      .sorting-algo-stick-done {
+        @extend .sorting-algo-stick-none;
+        background-color: rgb(87, 242, 135);
+      }
     }
   }
 }
