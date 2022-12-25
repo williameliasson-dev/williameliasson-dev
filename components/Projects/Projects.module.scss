@@ -4,8 +4,8 @@
   background: url("/steps-project.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left;
   display: flex;
-
   justify-content: center;
 }
 
@@ -44,6 +44,7 @@
     border-radius: 5px;
     height: 200px;
     cursor: pointer;
+    background-color: white;
     .projects-intro-card-top {
       border-bottom: 1px solid black;
       width: 100%;
@@ -79,4 +80,19 @@
 }
 
 @media screen and (max-width: 992px) {
+  .projects-container {
+    background-position: 25%;
+  }
+  .projects-intro-cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: none;
+    padding: 20px 0px;
+    .projects-intro-card {
+      width: auto;
+      max-width: 600px;
+    }
+  }
 }

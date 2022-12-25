@@ -39,7 +39,6 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-right: 120px;
     .timeline-button {
       width: 170px;
       font-family: inherit;
@@ -69,6 +68,9 @@
       border: 1px solid var(--secondary);
       top: 50%;
       z-index: 0;
+    }
+    .timeline-line-mobile {
+      display: none;
     }
   }
 }
@@ -142,6 +144,7 @@
     display: none;
   }
   .timeline-line-mobile {
+    display: block !important;
     position: absolute;
     height: 100%;
     width: 2px;

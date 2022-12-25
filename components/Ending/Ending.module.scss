@@ -2,7 +2,6 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   font-size: 1.3rem;
   .ending-button {
@@ -36,5 +35,12 @@
     h1 {
       font-size: 2rem;
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ending {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

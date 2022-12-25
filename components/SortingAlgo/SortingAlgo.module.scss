@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: flex-end;
   font-size: 1.3rem;
   background: url("/steps-sorting.svg");
@@ -86,6 +87,7 @@
     }
   }
   .sorting-algo-sticks {
+    flex: 1;
     border: 1px solid black;
     border-radius: 5px;
     display: flex;
