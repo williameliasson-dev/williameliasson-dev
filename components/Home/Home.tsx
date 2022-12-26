@@ -24,7 +24,7 @@ const Home: React.FC<HomeProps> = ({}) => {
           </div>
           <p>Jag är en driven och ambitiös utvecklare</p>
           <p>som älskar att skapa saker.</p>
-          Jag har en stor passion för
+          <p>Jag har en stor passion för</p>
           <p>att utveckla verktyg som är användbara och som kan hjälpa </p>
           <p>andra människor.</p>
         </div>

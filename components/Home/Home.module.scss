@@ -5,12 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  display: flex;
+  padding-left: 20px;
 }
 
 .greeting {
   display: flex;
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -20,6 +19,7 @@
     font-weight: 500;
     .greeting-text-name {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 10px;
       h1 {
@@ -108,7 +108,12 @@
 
 @media screen and (max-width: 992px) {
   .home {
+    height: auto !important;
     background-position: 70%;
+
+    h1 {
+      font-size: 1.6rem;
+    }
   }
   .greeting {
     justify-content: flex-start;

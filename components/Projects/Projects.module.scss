@@ -6,7 +6,8 @@
   background-size: cover;
   background-position: left;
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 20px;
 }
 
 .projects-intro {
@@ -55,8 +56,6 @@
         font-size: 1.3rem;
       }
     }
-    .projects-intro-card-content {
-    }
     .projects-intro-card-bottom {
       margin-top: auto;
       display: flex;
@@ -81,6 +80,7 @@
 
 @media screen and (max-width: 992px) {
   .projects-container {
+    height: 100%;
     background-position: 25%;
   }
   .projects-intro-cards {
@@ -93,6 +93,9 @@
     .projects-intro-card {
       width: auto;
       max-width: 600px;
+      &:hover {
+        transform: rotate(0deg);
+      }
     }
   }
 }

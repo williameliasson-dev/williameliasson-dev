@@ -8,6 +8,7 @@
   width: 100%;
   margin: 100px auto;
   height: 100%;
+  font-size: 1.3rem;
   .timeline-slide {
     position: relative;
     display: flex;
@@ -101,11 +102,11 @@
   .timeline-title {
     text-align: center;
     font-size: 3rem;
-    padding-bottom: 0px;
+    padding: 20px 0;
   }
   .timeline {
     display: flex;
-    height: 50vh;
+    height: auto;
     margin: 20px auto;
     justify-content: flex-start;
     .timeline-buttons {
@@ -116,7 +117,8 @@
       justify-content: flex-start;
       gap: 20px;
       .timeline-button {
-        width: 150px;
+        max-width: 150px;
+        width: auto;
         font-size: 1rem;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
