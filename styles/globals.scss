@@ -12,8 +12,6 @@ body {
   overflow: overlay;
   background-color: white;
   @media screen and (max-width: 992px) {
-    overflow-x: hidden;
-    overflow-y: scroll;
   }
 }
 

@@ -16,6 +16,7 @@ const Timeline: React.FC<TimelineProps> = ({}) => {
         <div className={styles["timeline-buttons"]}>
           <div className={styles["timeline-line-mobile"]}></div>
           <button
+            style={{ marginTop: "0" }}
             className={
               slideAnimate === 0
                 ? styles["timeline-button-active"]

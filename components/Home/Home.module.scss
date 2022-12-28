@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  padding-top: 20px;
   .greeting-text {
     max-width: 880px;
     font-size: 1.3rem;
@@ -60,6 +61,7 @@
       background-color: black;
       color: white;
       padding: 5px;
+      margin: 2px;
       border-radius: 5px;
       &:hover {
         transform: rotate(5deg);
@@ -110,13 +112,31 @@
   .home {
     height: auto !important;
     background-position: 70%;
-
+    padding-left: 0px;
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
     }
   }
   .greeting {
     justify-content: flex-start;
     padding-top: 20px;
+  }
+  .greeting {
+    justify-content: flex-start;
+    padding-top: 20px;
+    .greeting-text {
+      font-size: 1rem;
+      .greeting-text-name {
+        h1 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
   }
 }

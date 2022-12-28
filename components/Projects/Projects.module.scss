@@ -82,16 +82,28 @@
   .projects-container {
     height: 100%;
     background-position: 25%;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .projects-intro {
+    align-items: center;
+    .projects-intro-text {
+      font-size: 1rem;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
   }
   .projects-intro-cards {
     display: flex;
     justify-content: center;
-    gap: 10px;
+
     flex-wrap: wrap;
     max-width: none;
     padding: 20px 0px;
     .projects-intro-card {
       width: auto;
+      margin: 5px 0;
       max-width: 600px;
       &:hover {
         transform: rotate(0deg);
