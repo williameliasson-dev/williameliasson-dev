@@ -83,7 +83,7 @@ const Home: React.FC<HomeProps> = ({}) => {
             <Image
               width={340}
               height={420}
-              src={"/williame.jpg"}
+              src={"/williame.webp"}
               alt="Picture of me!"
             />
           </div>
