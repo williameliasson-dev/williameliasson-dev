@@ -47,7 +47,8 @@
 .skills {
   display: flex;
   .skills-img {
-    background-color: W;
+    background-color: white;
+    box-shadow: var(--projectshadow);
     overflow: hidden;
     position: relative;
     border: 1px solid black;

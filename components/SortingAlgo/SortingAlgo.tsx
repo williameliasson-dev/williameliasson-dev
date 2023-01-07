@@ -118,7 +118,7 @@ const SortingAlgo: React.FC<SortingAlgoProps> = ({}) => {
               max="20"
               type="range"
               value={sticksAmount}
-              onChange={(e) => setSticksAmount(e.target.value)}
+              onChange={(e) => setSticksAmount(parseInt(e.target.value))}
             />
           </div>
         </div>
