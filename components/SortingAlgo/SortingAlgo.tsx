@@ -3,6 +3,7 @@ import styles from "./SortingAlgo.module.scss";
 import Link from "next/link";
 import ExternalIcon from "../../icons/ExternalIcon";
 import GitHub from "../../icons/GitHub";
+import ArrowDownCurve from "../../icons/ArrowDownCurve";
 
 interface SortingAlgoProps {}
 
@@ -80,7 +81,7 @@ const SortingAlgo: React.FC<SortingAlgoProps> = ({}) => {
           </p>
           <p>
             Användaren kan även själv välja algorithm, hur snabbt det ska gå och
-            hur många stapplar som sorteras
+            hur många stapplar som sorteras.
           </p>
           <div className={styles["sorting-algo-links"]}>
             <Link href={"https://sorting-algo-six.vercel.app/"}>
@@ -90,6 +91,9 @@ const SortingAlgo: React.FC<SortingAlgoProps> = ({}) => {
               <GitHub />
               GitHub
             </Link>
+          </div>
+          <div>
+            Testa mig! <ArrowDownCurve />
           </div>
         </div>
         <div className={styles["sorting-algo-buttons"]}>

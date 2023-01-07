@@ -18,6 +18,10 @@
     max-width: 880px;
     font-size: 1.3rem;
     font-weight: 500;
+    p {
+      font-weight: 300;
+      color: var(--secondarytext);
+    }
     .greeting-text-name {
       display: flex;
       flex-wrap: wrap;
@@ -42,6 +46,30 @@
 
 .skills {
   display: flex;
+  .skills-img {
+    background-color: W;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    max-height: 450px;
+    display: flex;
+    align-items: center;
+    .skills-img-cover {
+      animation: hover 4s ease-in-out infinite;
+      position: absolute;
+      inset: 0;
+      background: url("/steps-skills-img.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+    }
+    img {
+      margin: 20px;
+      border-radius: 5px;
+    }
+  }
   h1 {
     font-size: 2rem;
   }
@@ -108,11 +136,26 @@
   }
 }
 
+@keyframes hover {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 @media screen and (max-width: 992px) {
   .home {
     height: auto !important;
     background-position: 70%;
     padding-left: 0px;
+    .skills-img {
+      display: none;
+    }
     h1 {
       font-size: 1.5rem;
     }

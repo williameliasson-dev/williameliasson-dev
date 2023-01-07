@@ -2,6 +2,7 @@
 import React from "react";
 import ArrowDownIcon from "../../icons/ArrowDownIcon";
 import styles from "./Home.module.scss";
+import Image from "next/image";
 import { useWindowScrollPositions } from "../../utils/useWindowScrollPosition";
 
 interface HomeProps {}
@@ -30,7 +31,7 @@ const Home: React.FC<HomeProps> = ({}) => {
         </div>
         <div className={styles.skills}>
           <div>
-            <h1>Vad kan jag för nåt?</h1>
+            <h1>Vad kan jag för något?</h1>
             <div className={styles["skills-section"]}>
               <h1>Språk</h1>
               <div>
@@ -76,6 +77,15 @@ const Home: React.FC<HomeProps> = ({}) => {
                 <span>EsLint</span>
               </div>
             </div>
+          </div>
+          <div className={styles["skills-img"]}>
+            <div className={styles["skills-img-cover"]} />
+            <Image
+              width={340}
+              height={420}
+              src={"/williame.jpg"}
+              alt="Picture of me!"
+            />
           </div>
         </div>
       </div>

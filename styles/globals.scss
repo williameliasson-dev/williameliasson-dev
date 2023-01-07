@@ -5,14 +5,15 @@ html {
   @media screen and (max-width: 992px) {
     padding: 0 10px;
   }
+  @media screen and (max-width: 1465px) {
+    padding: 0 20px;
+  }
 }
 body {
   padding: 0;
   margin: 0;
   overflow: overlay;
   background-color: white;
-  @media screen and (max-width: 992px) {
-  }
 }
 
 ::-webkit-scrollbar {
@@ -57,4 +58,9 @@ a {
   --primary: #010029;
   --secondary: rgb(11, 176, 242);
   --sogray: rgb(207, 207, 207);
+  --secondarytext: rgb(125, 125, 125);
+  --projectshadow: rgb(222, 222, 222) 20px 10px 30px;
+  @media screen and (max-width: 992px) {
+    --secondarytext: rgb(92, 92, 92);
+  }
 }
