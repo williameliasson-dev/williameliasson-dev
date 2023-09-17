@@ -238,21 +238,21 @@ const Timeline: React.FC<TimelineProps> = ({}) => {
             }
           >
             <div className={styles["timeline-slide-text"]}>
-              <h1>Framtiden..</h1>
+              <h1>Zendr</h1>
               <p>
-                Just nu så söker jag heltids jobb som webbutvecklare. Jag har en
-                stor vilja att lära mig mer och vill bli bättre. Men vem vet
-                kanske är det just ditt företag som jag skriver om härnäst...
+                Just nu arbeter jag som fullstack utvecklare på Zendr. Vi är ett
+                bolag som bygger en plattform för att hjälpa företag att
+                förenkla deras logistik.
               </p>
             </div>
             <div className={styles["timeline-slide-img"]}>
               <Image
-                src={"/undraw_hologram_re_7ppw.svg"}
+                src={"/zendr-logo-hallon.svg"}
                 alt="Vem vet vad framtiden håller?"
                 width={500}
                 height={300}
               ></Image>
-              <p>Vem vet vad framtiden håller?</p>
+              <p>Vi gör frakt enkelt!</p>
             </div>
           </div>
         )}
